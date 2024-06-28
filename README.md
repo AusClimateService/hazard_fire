@@ -24,3 +24,8 @@ for model 0 to 12 do
 	python rechunk,py model
 	python ffdi_v0 model
 done
+
+
+Data locations: 
+ - /g/data/ia39/ncra/bushfire/ffdi - multi-model
+ - /g/data/ia39/ncra/fire

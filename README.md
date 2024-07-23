@@ -1,4 +1,9 @@
 # hazard_fire
+
+- Data location: /g/data/ia39/ncra/bushfire/
+- Figues available: /g/data/ia39/ncra/bushfire/figures
+- Data status can be found here: https://github.com/AusClimateService/hazard_data_release/blob/main/README.md
+
 Code and descriptions for fire weather indices and metrics
 
 The initial code was developed to compute FFDI from the bias_input_data of the ACS regional climate simulations

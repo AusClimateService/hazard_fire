@@ -1,0 +1,69 @@
+period,region,abbrevs,names,days100_p10,days100_p50,days100_p90
+0,0,1,Western Australia (1),0.0,0.0,0.0
+0,1,10,Southern Tablelands (10),0.0,0.0,0.0
+0,2,11,Murray Valley (11),0.0,0.0,0.0
+0,3,12,Central Victoria (12),0.0,0.0,0.0
+0,4,13,Central Gippsland (13),0.0,0.0,0.0
+0,5,14,East GippslandBombala (14),0.0,0.0,0.0
+0,6,15,Tasmania (15),0.0,0.0,0.0
+0,7,2,Northern Territory (2),0.0,0.0,0.0
+0,8,20,Pilliga (20),0.0,0.0,0.0
+0,9,3,Mount Lofty Ranges and Kangaroo Island (3),0.0,0.0,0.0
+0,10,4,Green Triangle (4),0.0,0.0,0.0
+0,11,5a,Northern Queensland (5a),0.0,0.0,0.0
+0,12,5b,Northern Queensland (5b),0.0,0.0,0.0
+0,13,6,South East Queensland (6),0.0,0.0,0.0
+0,14,7,Northern Tablelands (7),0.0,0.0,0.0
+0,15,8,North Coast (8),0.0,0.0,0.0
+0,16,9,Central Tablelands (9),0.0,0.0,0.0
+1,0,1,Western Australia (1),0.03,0.5,1.08
+1,1,10,Southern Tablelands (10),-0.01,0.0,0.03
+1,2,11,Murray Valley (11),0.0,0.06,0.35
+1,3,12,Central Victoria (12),0.0,0.06,0.39
+1,4,13,Central Gippsland (13),0.0,0.02,0.08
+1,5,14,East GippslandBombala (14),0.0,0.0,0.02
+1,6,15,Tasmania (15),0.0,0.0,0.0
+1,7,2,Northern Territory (2),-0.01,0.06,0.19
+1,8,20,Pilliga (20),0.01,0.11,0.6
+1,9,3,Mount Lofty Ranges and Kangaroo Island (3),0.01,0.11,0.56
+1,10,4,Green Triangle (4),0.01,0.1,0.7
+1,11,5a,Northern Queensland (5a),0.0,0.0,0.0
+1,12,5b,Northern Queensland (5b),0.0,0.0,0.02
+1,13,6,South East Queensland (6),0.0,0.0,0.02
+1,14,7,Northern Tablelands (7),0.0,0.0,0.01
+1,15,8,North Coast (8),0.0,0.01,0.06
+1,16,9,Central Tablelands (9),0.0,0.0,0.1
+2,0,1,Western Australia (1),0.47,0.99,2.27
+2,1,10,Southern Tablelands (10),0.0,0.02,0.07
+2,2,11,Murray Valley (11),0.0,0.1,0.55
+2,3,12,Central Victoria (12),0.0,0.12,0.75
+2,4,13,Central Gippsland (13),0.0,0.03,0.13
+2,5,14,East GippslandBombala (14),0.0,0.0,0.04
+2,6,15,Tasmania (15),0.0,0.0,0.0
+2,7,2,Northern Territory (2),0.0,0.14,0.52
+2,8,20,Pilliga (20),-0.1,0.2,0.51
+2,9,3,Mount Lofty Ranges and Kangaroo Island (3),0.0,0.12,1.15
+2,10,4,Green Triangle (4),0.01,0.12,1.18
+2,11,5a,Northern Queensland (5a),0.0,0.0,0.0
+2,12,5b,Northern Queensland (5b),-0.01,0.0,0.0
+2,13,6,South East Queensland (6),-0.01,0.0,0.03
+2,14,7,Northern Tablelands (7),-0.01,0.0,0.01
+2,15,8,North Coast (8),-0.01,0.0,0.04
+2,16,9,Central Tablelands (9),-0.01,0.06,0.18
+3,0,1,Western Australia (1),0.65,1.96,3.07
+3,1,10,Southern Tablelands (10),0.0,0.04,0.18
+3,2,11,Murray Valley (11),0.02,0.26,0.97
+3,3,12,Central Victoria (12),0.02,0.31,1.19
+3,4,13,Central Gippsland (13),0.0,0.08,0.3
+3,5,14,East GippslandBombala (14),0.0,0.01,0.06
+3,6,15,Tasmania (15),0.0,0.0,0.0
+3,7,2,Northern Territory (2),0.04,0.41,1.14
+3,8,20,Pilliga (20),0.11,0.91,1.48
+3,9,3,Mount Lofty Ranges and Kangaroo Island (3),0.1,0.48,1.69
+3,10,4,Green Triangle (4),0.04,0.45,1.56
+3,11,5a,Northern Queensland (5a),0.0,0.0,0.01
+3,12,5b,Northern Queensland (5b),-0.01,0.0,0.05
+3,13,6,South East Queensland (6),-0.01,0.02,0.03
+3,14,7,Northern Tablelands (7),0.0,0.04,0.06
+3,15,8,North Coast (8),-0.01,0.06,0.14
+3,16,9,Central Tablelands (9),0.0,0.07,0.37

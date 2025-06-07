@@ -10,20 +10,28 @@ FFDI is based on XCLIM implementation
 The code has been setup to process the data in bias-input-data for ssp370
 
 To apply the code, one needs to
-1. rechunk the simulations to store the data with all the time points in one chunk and save it into a Zarr store.  The chunking process required an initial time chunk of 1 because some of the files chunk only one-time point!  In future, it is recommended to chunk the netcdf files with smaller dimensions (e.g. time =-1, lat=33, lon=43) to facilitate the building of a dataset with one chunk in time.
+0. rechunk the simulations to store the data with all the time points in one chunk and save it into a Zarr store.  The chunking process required an initial time chunk of 1 because some of the files chunk only one-time point!  In future, it is recommended to chunk the netcdf files with smaller dimensions (e.g. time =-1, lat=33, lon=43) to facilitate the building of a dataset with one chunk in time.
 
-The resulting Zarr store only has the 4 variables used in the FFDI calculation, which should be fixed. (add dswr and rhusmax),  
+See workflow repo for the catalogue create, rechunking and checking of the zarr store
+
 The Zarr store should also speed up other diagnostics done along the time dimension (e.g. EHF)
 **This step should be moved to the workflow repo for repeating the generation of the hazard diagnostics**
 
-2. run the ffdi_cal to compute the ffdi from the Zarr stores from 1.
+job_normal.sh can do steps 1 and 2
+
+1. Compute the ffdi from the Zarr stores - 
+ffdi_batch.ipynb (py) 
 Note the XCLIM ffdi code cannot have chunking across the time dimension, hence the need for rechunking
 
-3. the ffdi_threshold(a) computes the number of days per year that ffdi exceeds 50, 75 and 100.  The (a) version outputs a value of each year of the GWL while the other file just provides a number for each GWL.  The code was modified to also write the ffdi data for each RCM and GWLs.
+2. Computes the number of days per year that ffdi exceeds 50, 75 and 100 for a set of GWLs. The output
+can included average value, value for each year and the 20years of FFDI values for each GWL.  
+ffdi_threshold_batch.ipynb  (py). 
 
-4. ensemble-table provides stats on the ffdi thresholds for the different NCRA regions for the various RCMs and GWLs.  The routine writes a file for each threshold for all RCMs and GWLs, which can be used for future assessments.
+3. threshold_stats - provide bring the information on the different thresholds together
 
-5. Final step would be combined all these steps into one file to enable replication for different datasets.
+3. ensemble-table provides stats on the ffdi thresholds for the different NCRA regions for the various RCMs and GWLs.  The routine writes a file for each threshold for all RCMs and GWLs, which can be used for future assessments.
+
+4. Final step would be combined all these steps into one file to enable replication for different datasets.
 PBS commands
 
 for model 0 to 12 do 

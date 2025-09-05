@@ -1,5 +1,7 @@
 # FFDI extremes paper from RCMs
 
+The paper draft is on Overleaf
+
 ## Code and workflow for multi-model analysis of FFDI and atmospheric variables from RCMs
 
 Foundation of a draft paper on FFDI extremes using RCMs. 

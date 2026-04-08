@@ -29,6 +29,7 @@ jupytext ffdi_batch.ipynb --to py
 ##python -u ./ffdi_batch.py raw ST-05 0 51 1 > ./$PBS_JOBID-job.log1 2>&1
 ##python -u ./ffdi_batch.py adjust QME-BARRAR2 0 50 1 > ./$PBS_JOBID-job.log1 2>&1
 ##python -u ./ffdi_batch.py adjust NSW-G 24 50 1 > ./$PBS_JOBID-job.log1 2>&1
+python -u ./ffdi_batch.py adjust1 UQ-DEC 29 30 1 > ./$PBS_JOBID-job.log1 2>&1
 
 jupytext ffdi_threshold_batch.ipynb --to py
 jupytext ffdi_threshold_time_batch.ipynb --to py
@@ -36,7 +37,7 @@ jupytext ffdi_threshold_time_batch.ipynb --to py
 ##python -u ./ffdi_threshold_batch.py adjust QME-BARRAR2 > ./$PBS_JOBID-job.log2 2>&1
 ##python -u ./ffdi_threshold_batch.py adjust BOM_ACCESS-ESM1-5_ssp370_r6i1p1f1_BARPA-R_v1-r1-ACS-QME-BARRAR2 > ./$PBS_JOBID-job.log2 2>&1
 ##python -u ./ffdi_threshold_batch.py adjust NSW-G > ./$PBS_JOBID-job.log2 2>&1
-python -u ./ffdi_threshold_time_batch.py adjust QME-BARRAR2 > ./$PBS_JOBID-job.log2 2>&1
+#python -u ./ffdi_threshold_time_batch.py adjust QME-BARRAR2 > ./$PBS_JOBID-job.log2 2>&1
  
  
  

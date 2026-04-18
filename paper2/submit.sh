@@ -34,15 +34,12 @@ case "$task" in
     ;;
 esac
 
-#for ((j1=25; j1<=38; j1+=4)); do
-#for ((j1=24; j1<=26; j1+=4)); do
-#for ((j1=0; j1<=6; j1+=3)); do
-#for ((j1=33; j1<=33; j1+=2)); do
 for ((j1=0; j1<=0; j1+=4)); do
+##for ((j1=1; j1<=44; j1+=4)); do
   j2=$((j1 + 3))
 #  j2=$((j1 + 2))
 #  j2=$((j1 + 1))
-  j2=$((j1 + 0))
+#  j2=$((j1 + 0))
   jobfile="cjob_${j1}_${j2}.pbs"
 
   # Create PBS job script
@@ -79,10 +76,10 @@ jupyter kernelspec list
 echo "Time from $ts to $te "
 echo "Processing from $j1 to $j2"
 for ((i=$j1; i<=$j2; i+=1)); do
-papermill xr_correl.ipynb output/outcor_\${i}.ipynb -k python3 -p mindex \${i} -p lat1 -45 -p lat2 -10 -p lon1 110 -p lon2 155 -p t1 $ts -p t2 $te -p dirstore $store
-#papermill xr_permutation.ipynb output/outper_\${i}.ipynb -k python3 -p mindex \${i} -p lat1 -45 -p lat2 -10 -p lon1 110 -p lon2 155 -p t1 $ts -p t2 $te -p dirstore $store
-#papermill xr_fit_pdf.ipynb output/outfit_\${i}.ipynb -k python3 -p mindex \${i} -p lat1 -45 -p lat2 -10 -p lon1 110 -p lon2 155 -p t1 $ts -p t2 $te -p dirstore $store
-#papermill xr_sobol-v1.ipynb output/outsobol_\${i}.ipynb -k python3 -p mindex \${i} -p lat1 -45 -p lat2 -10 -p lon1 110 -p lon2 155 -p t1 $ts -p t2 $te -p dirstore $store
+#papermill xr_correl.ipynb output/outcor_\${i}.ipynb -k python3 -p mindex \${i} -p lat1 -45 -p lat2 -10 -p lon1 110 -p lon2 155 -p p_ext 0.99 -p t1 $ts -p t2 $te -p dirstore $store
+papermill xr_permutation.ipynb output/outper_\${i}.ipynb -k python3 -p mindex \${i} -p lat1 -45 -p lat2 -10 -p lon1 110 -p lon2 155 -p p_ext 0.99 -p t1 $ts -p t2 $te -p dirstore $store
+papermill xr_fit_pdf.ipynb output/outfit_\${i}.ipynb -k python3 -p mindex \${i} -p lat1 -45 -p lat2 -10 -p lon1 110 -p lon2 155 -p p_ext 0.99 -p t1 $ts -p t2 $te -p dirstore $store
+papermill xr_sobol-v1.ipynb output/outsobol_\${i}.ipynb -k python3 -p mindex \${i} -p lat1 -45 -p lat2 -10 -p lon1 110 -p lon2 155 -p p_ext 0.99 -p t1 $ts -p t2 $te -p dirstore $store
 done
 
 EOF
